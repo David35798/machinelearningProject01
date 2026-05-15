@@ -61,7 +61,6 @@
 
 모델 입력에는 48개 시점의 시퀀스 데이터를 사용했으며, LSTM 계층과 Dropout 계층을 조합하여 과적합을 완화하고자 했습니다.
 
-```python
 LSTM(64, return_sequences=True)
 Dropout(0.2)
 LSTM(32)
