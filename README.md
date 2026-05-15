@@ -115,39 +115,62 @@ project/
 ## 실행 방법
 
 1. 프로젝트 클론
+
 git clone https://github.com/David35798/machinelearningProject01.git
+
 cd machinelearningProject01
 
 2. 패키지 설치
+
 pip install -r requirements.txt
 
 3. Streamlit 실행
+
 streamlit run app.py
 
 ## 본 프로젝트를 통해 배운 점
 
 시계열 데이터에서 시간 변수와 lag feature의 중요성을 이해했습니다.
+
 시간 데이터를 단순 숫자가 아닌 sin/cos 주기성 변수로 변환하는 방법을 적용했습니다.
+
 LSTM 모델을 활용하여 과거 시점 정보를 반영한 예측 모델을 구현했습니다.
 학습 데이터와 테스트 데이터를 시간 순서에 맞게 분리하는 방식의 중요성을 경험했습니다.
+
 학습된 모델과 scaler를 저장한 뒤, 웹 애플리케이션에서 재사용하는 전체 흐름을 구현했습니다.
+
 Streamlit을 활용하여 머신러닝 모델을 사용자가 직접 체험할 수 있는 서비스 형태로 구현했습니다.
+
 데이터 전처리, 모델 학습, 성능 평가, 모델 저장, 웹 서비스 구현까지 머신러닝 프로젝트의 전체 파이프라인을 경험했습니다.
 
 ## 향후 개선 방향
 
 다양한 모델과의 성능 비교
+
 Linear Regression
+
 Random Forest
+
 XGBoost
+
 GRU
+
 추가적인 외부 변수 활용
+
 계절
+
 요일
+
 공휴일
+
 날씨 예보 데이터
+
 예측 성능 개선을 위한 feature engineering 고도화
+
 실제 운영 환경을 고려한 모델 재학습 파이프라인 구축
+
 Streamlit Cloud 또는 Docker 기반 배포
+
 사용자 입력값 기반의 예측 결과 저장 기능 추가
+
 예측 결과에 대한 해석 기능 추가
